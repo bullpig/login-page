@@ -1,0 +1,21 @@
+.auth-layout {
+  display: flex;
+  > div {
+    height: 100vh;
+  }
+  .bg-layout {
+    height: 100vh;
+    flex: 55%;
+    // background-image: url('./../../../public/bg-1.jpg');
+    background-image: url(https://source.unsplash.com/random?wallpapers);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .bg-layout {
+    display: none;
+  }
+}
