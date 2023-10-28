@@ -5,8 +5,6 @@ const PublicRoute = () => {
   const location = useLocation()
   const { user } = useAuth()
 
-  console.log(user)
-
   const redirectUrl =
     location.state && location.state.from ? location.state.from.pathname : '/'
 

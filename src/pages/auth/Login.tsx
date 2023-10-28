@@ -126,7 +126,9 @@ const Login = () => {
                       {errors.password?.message}
                     </div>
                   )}
-                  {error && <div className="error-message">{error}</div>}
+                  {!errors.email && !errors.password && error && (
+                    <div className="error-message">{error}</div>
+                  )}
                 </div>
               </div>
 
