@@ -121,15 +121,15 @@ const Login = () => {
                       <EyeFill size={18} color="#5d6675" />
                     )}
                   </button>
-                  {errors.password && (
-                    <div className="error-message">
-                      {errors.password?.message}
-                    </div>
-                  )}
-                  {!errors.email && !errors.password && error && (
-                    <div className="error-message">{error}</div>
-                  )}
                 </div>
+                {errors.password && (
+                  <div className="error-message">
+                    {errors.password?.message}
+                  </div>
+                )}
+                {!errors.email && !errors.password && error && (
+                  <div className="error-message">{error}</div>
+                )}
               </div>
 
               <div className="checkbox-container">
